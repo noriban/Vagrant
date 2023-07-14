@@ -6,15 +6,10 @@
     docker_users:
       - panda
       - vagrant
-- name: Use role in loop
-  ansible.builtin.include_role:
-    name: '{{ roleinputvar }}'
-  loop:
+  roles:
     - user
     - packages
     - geerlingguy.docker
     - christiangda.awscli
     - christiangda.awscli_configure
     - diodonfrost.terraform
-  loop_control:
-    loop_var: roleinputvar
