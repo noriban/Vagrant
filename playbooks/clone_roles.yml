@@ -6,7 +6,7 @@
     git_repository: "https://github.com/noriban/Ansible_roles.git"
     git_branch: "main"
   tasks:
-    - name: Create a directory if it does not existeded
+    - name: Create a directory if it does not existed
       file:
         path: /etc/ansible/roles
         state: directory
