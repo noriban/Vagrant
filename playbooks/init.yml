@@ -1,5 +1,5 @@
 ---
-- name: 
+- name: Init vagrant server
   hosts: all
   become: true
   vars:
@@ -9,6 +9,8 @@
   roles:
     - user
     - packages
+    # - autocomplete
+    # - keys
     - geerlingguy.docker
     - christiangda.awscli
     - christiangda.awscli_configure
