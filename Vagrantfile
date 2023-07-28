@@ -2,6 +2,7 @@ VAGRANT_COMMAND = ARGV[0]
 
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-20.04"
+  config.vm.boot_timeout = 700
   
   config.vm.provider "virtualbox" do |v|
     v.memory = 10240
